@@ -1,0 +1,11 @@
+{
+  "employee": {
+    "name": "sonoo",
+    "salary": 56000,
+    "married": true
+  },
+  "department": {
+    "name": "testing",
+    "sub": "software"
+  }
+}
