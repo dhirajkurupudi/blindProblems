@@ -25,7 +25,19 @@ public class StocksBuyLowSellHigh {
 		}
 		
 		System.out.println(max);
+		//TC O(N)
+		//SC O(1)
+	}
+	
+	public static void maxProfit(int[] x) {
+		int min = x[0];
+		int profit = 0;
 		
+		for(int i = 1; i < x.length; i++) {
+			min = Math.min(min, x[i]);
+			profit = Math.max(profit, x[i]- min);
+		}
+		System.out.println(profit);
 	}
 
 }
